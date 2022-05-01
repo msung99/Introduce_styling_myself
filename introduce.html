@@ -3,52 +3,184 @@
         <title>LIKELION TESK</title>
         <meta charset = "UTF-8">
         <link rel = "stylesheet" href = "style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anton'>
+        <style>
+            #first-info{
+                position: sticky;
+                width:700px;
+                height: 70px;
+                font-size: 40px;
+                font-weight: bold;
+                color: #FFE146;
+                top: 0;
+                background-color: transparent; 
+            }
+
+            
+            #second-info{
+                position: sticky;
+                height: 600px;
+                width: 150px;
+                top: 200;
+                left: 30;
+                background-color: transparent;
+                text-align: center;
+                color:aliceblue;
+            }
+
+            #color_background{
+                border: 2px solid red;
+                background: radial-gradient(200% 100% at top center, #1b2947 15%, #75517d 35%, #e96f92 50%, #FAFAD2); /*body 태그 배경색 설정*/
+            }
+
+            .MBTI_TEXT{
+                color:white;
+                font-size: 40px;
+            }
+            #MBTI_subtext{
+                font-weight: bold;
+            }
+
+            .item:nth-child(1){
+                background-color: #FFBCB9;
+            }
+
+            .item:nth-child(2){
+                background-color: #FFD0CD;
+            }
+
+            .item:nth-child(3){
+                background-color: #FFDAD7;	
+            }
+
+            .item:nth-child(4){
+                background-color: #FFE4E1;
+            }
+
+            .item:nth-child(5){
+                background-color: #FFE6EB;
+            }
+        </style>
     </head>
     
     <body>
-        <div class = "night">
-            <p class = "intro-text">🦁Hello, LIKELION 10TH🦁</p>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>           
-      </div>
-
-        <section class = "out-round">
-            
-            <div class = "container">
-                <div class = "item">
-                    <h1 class = "animate__flash">LEE MIN SUNG</h1>
-                    <p class = "subTitle">Backend Engineer</p>
-                    <div class = "profile-user-img">
-                        <img class = "profile-user-img-img animate__flash" src = "캐릭터.jpg">
-                    </div>
-                    <h2>Introduce</h2>
-                    <p>백엔드 개발자가 되고 싶은 이민성입니다.</p>
-                    <p>🦁멋쟁이 사자처럼 10기 분들과 함께 멋있는 프로젝트를 개발해보고 싶습니다!🦁</p>
+        <div id="color_background">
+            <div class="night">
+                <div id="first-info">
+                    <p>Department of Computer Science</p>
                 </div>
-                <div class = "item">
-                    <h2>WHO AM I?</h2>
-                    <P class = subTitle>Summary</P>
-                    <p>💻 전공 : 컴퓨터공학과 💻</p>
-                    <p>MBTI : ENFJ</p>
-                    <p> 취미 : 복싱💪 수영🏊‍♀️ 코노🎤 </p>
-                    <P> 특기 : 운전🚗 </P> 
-                    <p></p>
-                    <p>제가 누군지 더 궁금하시죠? 지금부터 알아보실까요~~?</p>
-                </div>
-                <div class = "item">IEEM3</div>
+                <p class="intro-text">🦁Hello, LIKELION 10TH🦁</p>
+                <p class="intro-text">Let me Introduce myself!</p>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
             </div>
-        </section>
+    
+            <section class="out-round">
+                <div id="second-info">
+                    <p>Github</p>
+                    <a href="https://github.com/msung99"> <img class="side-img" src="github.png"></a>
+                    <p>Instagram</p>
+                    <a href="https://www.instagram.com/iminseong920/"> <img class="side-img" src="instagram.png"> </a>
+                    <p>Facebook</p>
+                    <a href="https://www.facebook.com/profile.php?id=100024477791095"> <img class="side-img" src="facebook.png"> </a>
+                </div>
+                <div class="container">
+                    <section class="item">
+                        <h1 class="animate__flash">LEE MIN SUNG</h1>
+                        <p class="subTitle">Backend Engineer</p>
+                        <div class="profile-user-img">
+                            <img class="profile-user-img-img animate__flash" src="캐릭터.jpg">
+                        </div>
+                        <h2 class="bounce_item">Introduce</h2>
+                        <p>백엔드 개발자가 되고 싶은 이민성입니다.</p>
+                        <p>🦁멋쟁이 사자처럼 10기 분들과 함께 멋있는 프로젝트를 개발해보고 싶습니다!🦁</p>
+                    </section>
+                    <section class="item">
+                        <h2 class="bounce_item">❔❓WHO AM I❓❔</h2>
+                        <P class=subTitle>Summary</P>
+                        <p>💻 전공 : 컴퓨터공학과 💻</p>
+                        <p>MBTI : ENFJ</p>
+                        <p> 취미 : 복싱💪 수영🏊‍♀️ 코노🎤 </p>
+                        <P> 특기 : 운전🚗 </P>
+                        <p></p>
+                        <p>제가 누군지 더 궁금하시죠? 지금부터 알아보실까요~~?</p>
+                    </section>
+                    <section class="item">
+                        <h2 class="bounce_item">💻아니, 전공자라면서요!!!💻</h2>
+                        <p>✔ 네, 전공자이지만 코딩 못합니다. 저도 웹 프로그래밍은 처음 이거든요!</p>
+                        <p>✔ 저는 멋쟁이사자처럼 10기 분들과 함께 배워나가고 싶습니다.</p>
+                        <p>✔ 전공자, 비전공자 가릴것 없이 동등하게 성장해 나갈 수 있는 좋은 기회가 되었으면 해요!</p>
+                        <P>✔ 저랑 밥먹으실 분들 구합니다👍 저희 빨리 친해져요!!!</P>
+                    </section>
+                    <section class="item">
+                        <h2>MBTI</h2>
+                        <h3 class="MBTI_TEXT bounce_item">😉E N F J😉</h3>
+                        <p id="MBTI_subtext">🤵정의로운 사회운동가🤵</p>
+                        <img class="MBTI_IMG" src="ENFJ.jpg">
+                        <img class="MBTI_IMG" src="ENFJ표.png">
+                        <div class="MBTI_comapre"></div>
+                        <p>✔ 외향적이라고는 하나, 처음보는 사람 앞에선 낮가립니다😂 </p>
+                        <p>✔ 대한민국에서 0.9% 미만으로 가장 희귀한 유형이랍니다! (그런데 멋사 분들중에 ENFJ 많이 본 것 같네요)</p>
+                        <p>✔ 친해지면 아주 재~밌는 성격이에요! 저랑 친해지실분?😎</p>
+                        <h3></h3>
+                    </section>
+    
+                    <section class="item">
+                        <h2 class="bounce_item">🎤코인 노래방 팟 공고모집🎤</h2>
+                        <p>✔ 시급: 0원</p>
+                        <p>✔ 지원조건 : 아주 신나게!! 목청이 터지게 놀 수 있는 사람</p>
+                        <p>✔ 지원하시면 바로 합격!</p>
+                        <p>✔ 🏊‍♀️사실 코노 말고도 복싱, 수영등 스포츠도 좋아합니다. 모두 대환영🏊‍♀️</p>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <p>ww</p>
+        <div>
+            
+            <h2>GO! 너도 운전할 수 있어</h2>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+            <p>w</p>
+
+        </div>
     </body>
 </html>
