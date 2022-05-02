@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); /*intro-text에 활용*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Noto+Sans+KR&display=swap'); /*container 안의 각 item에 적용*/
 
+
 .intro-text{
     position: relative;
     font-family: 'Dancing Script', cursive;
@@ -51,7 +52,16 @@
     font-family: 'Dancing Script', cursive;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
+    position: relative; /*position을 설정해 줘야 hover의 top:-10px 이동이 적용될 수 있다.*/
+    transition: all 0.5s; /*hover 애니메이션이 몇 초 동안 동작할지*/
 }
+
+/*사이드 이미지 커서 올릴시에, 위로 10px 이동하고 검은색 그림자가 생성*/
+.item2:hover{
+  top: -10px;
+  box-shadow: 0 0px 20px black;
+}
+
 
 h1{
     font-size: 50px;
@@ -142,6 +152,7 @@ h1{
 
 .night {
     position: relative;
+    top: -100px;
     width: 1500px;
     height: 900px;
 }
