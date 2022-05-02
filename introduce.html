@@ -5,12 +5,14 @@
         <link rel = "stylesheet" href = "style.css">
         <style>
             #first-info{
-                position: sticky;
+                position: fixed;
+                font-family: 'Dancing Script', cursive;
+                margin-left: 15px;
                 width:700px;
                 height: 70px;
-                font-size: 40px;
+                font-size: 30px;
                 font-weight: bold;
-                color: #FFE146;
+                color: blue;
                 top: 0;
                 background-color: transparent; 
             }
@@ -27,6 +29,30 @@
                 color:aliceblue;
                 border: 1px solid black;
                 margin-bottom: 1200px;
+            }
+            /*
+            #third-info{
+                position: sticky;
+                height: 70px;
+                width: 700px;
+                font-size: 30px;
+                color: black;
+                background-color: transparent;
+                top: 0;
+            }
+            */
+
+            #third-info{
+                position: sticky;
+                font-family: 'Dancing Script', cursive;
+                margin-left: 15px;
+                width:700px;
+                height: 70px;
+                font-size: 30px;
+                font-weight: bold;
+                color: black;
+                top: 0;
+                background-color: transparent; 
             }
 
             #color_background{
@@ -115,15 +141,27 @@
                 transition: opacity 1s; /*텍스트가 서서히 드러나는데 1초가 걸림*/
             }
             
+            footer{
+                text-align: center;
+                display: inline-block;
+                margin-left: 350px;            
+                font-size: 20px;
+                padding: 5px;
+                border-bottom: 2px solid black;
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Lato', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            
         </style>
     </head>
     
     <body>
         <div id="color_background">
+            <div id="first-info">
+                <p>MIN SUNG</p>
+            </div>
             <div class="night">
-                <div id="first-info">
-                    <p>Department of Computer Science</p>
-                </div>
                 <p class="intro-text">🦁Hello, LIKELION 10TH🦁</p>
                 <p class="intro-text">Let me Introduce myself!</p>
                 <div class="shooting_star"></div>
@@ -138,7 +176,7 @@
                 <div class="shooting_star"></div>
                 <div class="shooting_star"></div>
                 <div class="shooting_star"></div>
-            </div>
+            </div>  
     
             <section class="out-round">
                 <div id="second-info">
@@ -149,6 +187,7 @@
                     <p>Facebook</p>
                     <a href="https://www.facebook.com/profile.php?id=100024477791095"> <img class="side-img" src="facebook.png"> </a>
                 </div>
+
                 <div class="container">
                     <section class="item">
                         <h1 class="animate__flash">LEE MIN SUNG</h1>
@@ -201,16 +240,20 @@
             </section>
         </div>
         <div class = "service">
+            <div id = "third-info">
+                <p>MIN SUNG</p>
+            </div> 
+
             <h1>🚗GO! 너도 운전할 수 있어🚗</h1>
             <h2 id = "service_subtitle">운전자를 위한 대중 서비스</h2>
             <p id = "wait">🚘지금껏 몰아본 차량 종류 리스트🚘</p>
             <h3 id = "car_gallery_text">CAR GALLERY</h3>
-            <div id = "car_gallery_container">
+            <section id = "car_gallery_container">
 
                 <div class = "car_gallery_item">
                     <img class = "car-img" src = "5톤 트럭.jpg">
                     <div class = "car-text">
-                        <h3>5톤 트럭</h3>
+                        <h3>5톤 트럭(MEGA 트럭)</h3>
                         <p>특징: 대형차량이라 운전하기 힘듦. 몰아본 차량 중에서 가장 어려웠던 차량</p>
                         <p>차량 크기: 8m 50cm / 2m 20cm</p>
                     </div>
@@ -219,7 +262,7 @@
                 <div class = "car_gallery_item">
                     <img class = "car-img" src = "2.5톤 마이티.jpg">
                     <div class = "car-text">
-                        <h3>2.5톤 마이티</h3>
+                        <h3>2.5톤 마이티(MIGHTY)</h3>
                         <p>특징: 신형,구형이 있는데 구형차량 클러치 감 잡는게 더 쉬웠음</p>
                         <p>차량 크기: 6m 21cm / 3m 40cm</p>
                     </div>
@@ -288,8 +331,25 @@
                         <p>크기: 4m 98cm / 1m 97cm</p>
                     </div>
                 </div>
-
-            </div>
+            </section>
+            <section>
+                <div class ="item2">
+                    <h3 id = "drive-text"> 👩‍💻서비스 기획 동기👩‍💻</h3>
+                    <p>✔ 이렇게 🚚다양한 차량들을🚚 운행해 오면서, 사고가 발생한 뻔한적이 자주 있었습니다.</p>
+                    <p>✔ 🔥사고 발생률을 감소시켜줄 서비스를 개발해야 겠다고 다짐하게 되었습니다.🔥 </p>
+                    <p>✔ 따라서 저는 운행 출발전에 웹 사이트에 미리 접속해 사전에 운행 경로를 파악하고, 운행지 코스를 선택하는 서비스를 개발하고 싶습니다!</p>
+                </div>
+                <div class = "item2">
+                    <h3 id = "drive-text">🧙‍♂️서비스 기능 요약🧙‍♂️</h3>
+                    <p>✔ 이 서비스에선 자신의 기량에 적합한 코스를 여러 개 추천해주며, 그 중 자신이 원하는 코스를 선택해 경로를 운행 나가기전에 사전에 숙지하는 것입니다.</p>
+                    <p>✔ 즉, 서비스에는 🚦기량별 난이도 코스🚦가 여럿 탑제되어 있습니다.</p>
+                    <P>✔ 사용자는 코스를 추천받기 위해 정보를 입력합니다. 
+                    <p>✔ 입력된 개인 정보를 기반으로 💯원하는 최대난이도💯, ⏰시간⏰, 💎금액💎 안으로 목적지에 도달할 수 있는 안전한 경로를 몇 가지 탐색해줍니다. </p>
+                    <p>✔ 그리고 사용자는 추천받은 경로중에 가장 마음에 드는것을 골라서 경로 숙지를 시작하면 됩니다!</p>
+                    <p>✔ 추가적으로 커뮤니티 기능을 탑제하여 운행후 해당 코스에 대한 후기를 작성할 수 있고, 유저들은 여러 후기를 읽고 도움을 받을 수 있습니다. </p>
+                </div>
+                <footer>👦UMM.. 탑제할 서비스 기능이 너무 많으므로, 설명 못한 기능들은 해커톤때 본모습을 보여드리겠습니다👦</footer>
+            </section>
         </div>
     </body>
 </html>
