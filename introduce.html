@@ -5,15 +5,15 @@
         <link rel = "stylesheet" href = "style.css">
         <style>
             #first-info{
-                position: fixed;
+                position: sticky;
                 font-family: 'Dancing Script', cursive;
                 margin-left: 15px;
                 width:700px;
                 height: 70px;
                 font-size: 30px;
                 font-weight: bold;
-                color: blue;
-                top: 0;
+                color: white;
+                top: 20px;
                 background-color: transparent; 
             }
 
@@ -27,8 +27,7 @@
                 background-color: transparent;
                 text-align: center;
                 color:aliceblue;
-                border: 1px solid black;
-                margin-bottom: 1200px;
+                margin-bottom: 1000px;
             }
             /*
             #third-info{
@@ -56,7 +55,7 @@
             }
 
             #color_background{
-                border: 2px solid red;
+                border: 1px solid #FAFAD2;
                 background: radial-gradient(200% 100% at top center, #1b2947 15%, #75517d 35%, #e96f92 50%, #FAFAD2); /*body 태그 배경색 설정*/
             }
 
@@ -71,23 +70,41 @@
             }
 
             .item:nth-child(1){
+                width: 1300px; /*창의 크기를 줄이면 item이 망가져서, width, height를 고정. (설정 안하면 width, height값이 %로 들어간다.)*/
+                height: 800px;
                 background-color: #FFBCB9;
             }
 
             .item:nth-child(2){
+                width: 1300px;
+                height: 400px;
                 background-color: #FFD0CD;
             }
 
             .item:nth-child(3){
+                width: 1300px;
+                height: 300px;
                 background-color: #FFDAD7;	
             }
 
             .item:nth-child(4){
+                width: 1300px;
+                height: 700px;
                 background-color: #FFE4E1;
             }
 
             .item:nth-child(5){
+                width: 1300px;
+                height: 300px;
                 background-color: #FFE6EB;
+            }
+
+            #service-title-bind{
+                width: 1300px;
+                margin-left: 200px;
+                text-align:center;
+                padding: -100px;
+                border-bottom: 5px solid black;
             }
 
             #service_subtitle{
@@ -100,6 +117,9 @@
                 margin-top: 50px;
                 margin-left: 30px;
                 text-align: center;
+                font-family: 'Dancing Script', cursive; /*구글 폰트 가져왔는데 이렇게 중복 적용(?) 해도 되는건가 모르겠다*/
+                font-family: 'Lato', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
             }
 
             
@@ -138,13 +158,14 @@
                 align-items: center;
                 justify-content: center; /*주축의 가운데 지점에 정렬*/
                 opacity: 0%; /*투명도를 0으로 설정하고, 커서를 이미지에 가져다 댈 경우 텍스트가 보임*/
-                transition: opacity 1s; /*텍스트가 서서히 드러나는데 1초가 걸림*/
+                transition: opacity 0.75s; /*텍스트가 서서히 드러나는데 1초가 걸림*/
             }
             
             footer{
+                width: 900px;
                 text-align: center;
                 display: inline-block;
-                margin-left: 350px;            
+                margin-left: 400px;            
                 font-size: 20px;
                 padding: 5px;
                 border-bottom: 2px solid black;
@@ -158,9 +179,7 @@
     
     <body>
         <div id="color_background">
-            <div id="first-info">
-                <p>MIN SUNG</p>
-            </div>
+            <div id="first-info">MIN SUNG</div>
             <div class="night">
                 <p class="intro-text">🦁Hello, LIKELION 10TH🦁</p>
                 <p class="intro-text">Let me Introduce myself!</p>
@@ -239,17 +258,15 @@
                 </div>
             </section>
         </div>
+
         <div class = "service">
-            <div id = "third-info">
-                <p>MIN SUNG</p>
-            </div> 
-
-            <h1>🚗GO! 너도 운전할 수 있어🚗</h1>
-            <h2 id = "service_subtitle">운전자를 위한 대중 서비스</h2>
-            <p id = "wait">🚘지금껏 몰아본 차량 종류 리스트🚘</p>
-            <h3 id = "car_gallery_text">CAR GALLERY</h3>
+            <div id = "service-title-bind">
+                <h1>🚗GO! 너도 운전할 수 있어🚗</h1>
+                <h2 id = "service_subtitle">운전자를 위한 대중 서비스</h2>
+                <p id = "wait">🚘지금껏 몰아본 차량 종류 리스트🚘</p>
+                <h3 id = "car_gallery_text">CAR GALLERY</h3>
+            </div>
             <section id = "car_gallery_container">
-
                 <div class = "car_gallery_item">
                     <img class = "car-img" src = "5톤 트럭.jpg">
                     <div class = "car-text">

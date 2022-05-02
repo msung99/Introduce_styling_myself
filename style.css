@@ -17,8 +17,7 @@
     flex-direction: column;
     position: relative;
     top: -700px;
-    border: 1px solid black;
-    margin-top: -1000px;
+    margin-top: -900px;
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 200px;
@@ -40,8 +39,10 @@
 }
 
 .item2{
+    width: 1300px;
     margin: 100px;
     font-size: 20px;
+    margin-left: 200px;
     text-align: center;
     background-color: #dcdcdc;
     border-radius: 100px / 400px;
@@ -59,8 +60,7 @@ h1{
 }
 
 .out-round{
-    border: 3px solid blue;
-    margin-bottom: -1000px;
+    margin-bottom: -800px;
 }
 
 .side-img{
@@ -140,15 +140,11 @@ h1{
 }
 
 
-
-
 .night {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 1500px;
+    height: 900px;
 }
-
-
 
   
 /*별똥별*/
