@@ -25,6 +25,8 @@
                 background-color: transparent;
                 text-align: center;
                 color:aliceblue;
+                border: 1px solid black;
+                margin-bottom: 1200px;
             }
 
             #color_background{
@@ -35,9 +37,11 @@
             .MBTI_TEXT{
                 color:white;
                 font-size: 40px;
+                font-weight: bold;
             }
             #MBTI_subtext{
                 font-weight: bold;
+                color: green;
             }
 
             .item:nth-child(1){
@@ -59,6 +63,58 @@
             .item:nth-child(5){
                 background-color: #FFE6EB;
             }
+
+            #service_subtitle{
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #wait{
+                font-size:20px;
+                margin-top: 50px;
+                margin-left: 30px;
+                text-align: center;
+            }
+
+            
+            #car_gallery_text{
+                text-align: center;
+                font-size:50px;
+                font-family: 'Dancing Script', cursive;
+            }
+            
+            #car_gallery_container{
+                display: grid;
+                position: relative;
+                left: 300px;
+                width: 1200px;
+                grid-template-rows: repeat(3, 200px);
+                grid-template-columns: repeat(3, 350px);
+                grid-column-gap: 30px; /* grid의 item 간의 간격 설정*/
+                grid-row-gap: 30px;
+                opacity: 100%;
+            }
+
+            .car-text:hover{
+                opacity: 100%;
+            }
+            
+            .car-text{
+                cursor: pointer; /* 어떤 글자, 이미지등에 커서를 갖다댔을 때 커서 모양이 손가락 모양으로 바뀜*/
+                position: relative; 
+                top: -200px;
+                width: 350px;
+                height: 200px;
+                background: rgba(0, 0, 0, 0.5); /*배경식은 반투명한 효과를 내기위해 투명도를 0.5로 설정*/
+                color:white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; /*주축의 가운데 지점에 정렬*/
+                opacity: 0%; /*투명도를 0으로 설정하고, 커서를 이미지에 가져다 댈 경우 텍스트가 보임*/
+                transition: opacity 1s; /*텍스트가 서서히 드러나는데 1초가 걸림*/
+            }
+            
         </style>
     </head>
     
@@ -144,43 +200,96 @@
                 </div>
             </section>
         </div>
-        <p>ww</p>
-        <div>
-            
-            <h2>GO! 너도 운전할 수 있어</h2>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
+        <div class = "service">
+            <h1>🚗GO! 너도 운전할 수 있어🚗</h1>
+            <h2 id = "service_subtitle">운전자를 위한 대중 서비스</h2>
+            <p id = "wait">🚘지금껏 몰아본 차량 종류 리스트🚘</p>
+            <h3 id = "car_gallery_text">CAR GALLERY</h3>
+            <div id = "car_gallery_container">
 
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "5톤 트럭.jpg">
+                    <div class = "car-text">
+                        <h3>5톤 트럭</h3>
+                        <p>특징: 대형차량이라 운전하기 힘듦. 몰아본 차량 중에서 가장 어려웠던 차량</p>
+                        <p>차량 크기: 8m 50cm / 2m 20cm</p>
+                    </div>
+                </div>
+
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "2.5톤 마이티.jpg">
+                    <div class = "car-text">
+                        <h3>2.5톤 마이티</h3>
+                        <p>특징: 신형,구형이 있는데 구형차량 클러치 감 잡는게 더 쉬웠음</p>
+                        <p>차량 크기: 6m 21cm / 3m 40cm</p>
+                    </div>
+                </div>
+                
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "1톤 봉고.jpg">
+                    <div class = "car-text">
+                        <h3>1톤 봉고(POTRO)</h3>
+                        <p>특징: 차량은 조그만해서 시야가 잘 보이나, 클러치가 너무 예민해서 다소 까다로웠음</p>
+                        <p>차량 크기: 4m 85cm / 1m 74cm</p>
+                    </div>
+                </div>
+                
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "스타랙스.jpg">
+                    <div class = "car-text">
+                        <h3>스타렉스</h3>
+                        <p>특징: 국민 차량 1호. 카니발과 함께 양대산맥(?)이라 할수있는 승합차</p>
+                        <p>차량 크기: 5m 51cm / 1m 92cm</p>
+                    </div>
+                </div>
+                
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "스포티지.jpg">
+                    <div class = "car-text">
+                        <h3>스포티지</h3>
+                        <p>특징: 현재 운전중인 차량. 통학시 맨날 타고 다닙니다!</p>
+                        <p>차량 크기: 2m 30cm / 1m 65cm</p>
+                    </div>
+                </div>
+
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "중형버스.jpg">
+                    <div class = "car-text">
+                        <h3>중형버스</h3>
+                        <p>특징: 디젤차량이라 그런지, 확실히 출력(차량 파워)가 좋았음!</p>
+                        <p>크기: 6m 37cm / 2m 29cm</p>
+                    </div>
+                </div>
+
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "카니발.jpg">
+                    <div class = "car-text">
+                        <h3>카니발</h3>
+                        <p>특징: 스타렉스와 양대산맥을 이루고 있는 국민 승합차</p>
+                        <p>크기: 5m 11cm / 1m 68cm</p>
+                    </div>
+                </div>
+               
+                <div class = "car-gallery_item">
+                    <img class = "car-img" src = "코란도스포츠.png">
+                    <div class = "car-text">
+                        <h3>코란도스포츠</h3>
+                        <p>특징: 가장 운전하기 쉬웠던 차량. 4륜 구동이 가능하다.</p>
+                        <p>크기: 2m 60cm / 1m 57cm</p>
+                    </div>
+                    
+                </div>
+
+                <div class = "car-gallery_item">
+                    <img class = "car-img" src = "펠리세이드.jpg">
+                    <div class = "car-text">
+                        <h3>펠리세이드</h3>
+                        <p>특징: 안정감 최상위. 차량 탑제 기능 최상위.</p>
+                        <p>크기: 4m 98cm / 1m 97cm</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </body>
 </html>

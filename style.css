@@ -18,7 +18,10 @@
     position: relative;
     top: -700px;
     border: 1px solid black;
-    margin: 200px;
+    margin-top: -1000px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
     font-family: 'Dancing Script', cursive; /*구글 폰트 가져왔는데 이렇게 중복 적용(?) 해도 되는건가 모르겠다*/
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
@@ -39,6 +42,12 @@
 h1{
     font-size: 50px;
     font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.out-round{
+    border: 3px solid blue;
+    margin-bottom: -1000px;
 }
 
 
@@ -103,6 +112,12 @@ h1{
     object-fit: cover;
 }
 
+.car-img{
+    height: 200px; /*이미지 크기 재설정*/
+    width: 350px;
+}
+
+
 
 
 .night {
@@ -110,6 +125,9 @@ h1{
     width: 100%;
     height: 100%;
 }
+
+
+
   
 /*별똥별*/
   .shooting_star {
