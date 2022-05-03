@@ -20,7 +20,7 @@
     top: -700px;
     margin-top: -900px;
     margin-left: 200px;
-    margin-right: 200px;
+    margin-right: -200px;
     margin-bottom: 200px;
     font-family: 'Dancing Script', cursive; /*구글 폰트 가져왔는데 이렇게 중복 적용(?) 해도 되는건가 모르겠다*/
     font-family: 'Lato', sans-serif;
