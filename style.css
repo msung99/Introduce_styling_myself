@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); /*intro-text에 활용*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Noto+Sans+KR&display=swap'); /*container 안의 각 item에 적용*/
 
-
 .intro-text{
     position: relative;
     font-family: 'Dancing Script', cursive;
