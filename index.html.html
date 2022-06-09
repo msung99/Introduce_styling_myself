@@ -1,0 +1,373 @@
+<html>
+    <head>
+        <title>LIKELION TESK</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "style.css">
+        <style>
+            #first-info{
+                position: sticky;
+                font-family: 'Dancing Script', cursive;
+                margin-left: 15px;
+                width:700px;
+                height: 70px;
+                font-size: 30px;
+                font-weight: bold;
+                color: #FAF082;
+                top: 20px;
+                background-color: transparent; 
+            }
+
+            
+            #second-info{
+                position: sticky;
+                height: 600px;
+                width: 150px;
+                top: 200px;
+                left: 30px;
+                background-color: transparent;
+                text-align: center;
+                color:aliceblue;
+                margin-bottom: 1000px;
+            }
+            /*
+            #third-info{
+                position: sticky;
+                height: 70px;
+                width: 700px;
+                font-size: 30px;
+                color: black;
+                background-color: transparent;
+                top: 0;
+            }
+            */
+
+            #third-info{
+                position: sticky;
+                font-family: 'Dancing Script', cursive;
+                margin-left: 15px;
+                width:700px;
+                height: 70px;
+                font-size: 30px;
+                font-weight: bold;
+                color: black;
+                top: 0;
+                background-color: transparent; 
+            }
+
+            #color_background{
+                border: 1px solid #FAFAD2;
+                width: 100%;
+                background: radial-gradient(200% 100% at top center, #1b2947 15%, #75517d 35%, #e96f92 50%, #FAFAD2); /*body 태그 배경색 설정*/
+            }
+
+            .MBTI_TEXT{
+                color:white;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            #MBTI_subtext{
+                font-weight: bold;
+                color: green;
+            }
+
+            .item:nth-child(1){
+                width: 1300px; /*창의 크기를 줄이면 item이 망가져서, width, height를 고정. (설정 안하면 width, height값이 %로 들어간다.)*/
+                height: 800px;
+                background-color: #FFBCB9;
+            }
+
+            .item:nth-child(2){
+                width: 1300px;
+                height: 400px;
+                background-color: #FFD0CD;
+            }
+
+            .item:nth-child(3){
+                width: 1300px;
+                height: 300px;
+                background-color: #FFDAD7;	
+            }
+
+            .item:nth-child(4){
+                width: 1300px;
+                height: 700px;
+                background-color: #FFE4E1;
+            }
+
+            .item:nth-child(5){
+                width: 1300px;
+                height: 300px;
+                background-color: #FFE6EB;
+            }
+
+            #service-title-bind{
+                width: 1300px;
+                margin-left: 200px;
+                text-align:center;
+                padding: -100px;
+                border-bottom: 5px solid black;
+            }
+
+            #service_subtitle{
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #wait{
+                font-size:20px;
+                margin-top: 50px;
+                margin-left: 30px;
+                text-align: center;
+                font-family: 'Dancing Script', cursive; /*구글 폰트 가져왔는데 이렇게 중복 적용(?) 해도 되는건가 모르겠다*/
+                font-family: 'Lato', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+
+            
+            #car_gallery_text{
+                text-align: center;
+                font-size:50px;
+                font-family: 'Dancing Script', cursive;
+            }
+            
+            #car_gallery_container{
+                display: grid;
+                position: relative;
+                left: 300px;
+                width: 1200px;
+                grid-template-rows: repeat(3, 200px);
+                grid-template-columns: repeat(3, 350px);
+                grid-column-gap: 30px; /* grid의 item 간의 간격 설정*/
+                grid-row-gap: 30px;
+                opacity: 100%;
+            }
+
+            .car-text:hover{
+                opacity: 100%;
+            }
+            
+            .car-text{
+                cursor: pointer; /* 어떤 글자, 이미지등에 커서를 갖다댔을 때 커서 모양이 손가락 모양으로 바뀜*/
+                position: relative; 
+                top: -200px;
+                width: 350px;
+                height: 200px;
+                background: rgba(0, 0, 0, 0.6); /*배경식은 반투명한 효과를 내기위해 투명도를 0.5로 설정*/
+                color:white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; /*주축의 가운데 지점에 정렬*/
+                opacity: 0%; /*투명도를 0으로 설정하고, 커서를 이미지에 가져다 댈 경우 텍스트가 보임*/
+                transition: opacity 0.75s; /*텍스트가 서서히 드러나는데 0.75초가 걸림*/
+            }
+            
+            footer{
+                width: 900px;
+                text-align: center;
+                display: inline-block;
+                margin-left: 400px;            
+                font-size: 20px;
+                padding: 5px;
+                border-bottom: 2px solid black;
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Lato', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="color_background">
+            <div id="first-info">MIN SUNG</div>
+            <div class="night">
+                <p class="intro-text">🦁Hello, LIKELION 10TH🦁</p>
+                <p class="intro-text">Let me Introduce myself!</p>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+            </div>  
+    
+            <section class="out-round">
+                <div id="second-info">
+                    <p>Github</p>
+                    <a href="https://github.com/msung99"> <img class="side-img" src="github.png"></a>
+                    <p>Instagram</p>
+                    <a href="https://www.instagram.com/iminseong920/"> <img class="side-img" src="instagram.png"> </a>
+                    <p>Facebook</p>
+                    <a href="https://www.facebook.com/profile.php?id=100024477791095"> <img class="side-img" src="facebook.png"> </a>
+                </div>
+
+                <div class="container">
+                    <section class="item">
+                        <h1 class="animate__flash">LEE MIN SUNG</h1>
+                        <p class="subTitle">Backend Engineer</p>
+                        <div class="profile-user-img">
+                            <img class="profile-user-img-img animate__flash" src="캐릭터.jpg">
+                        </div>
+                        <h2 class="bounce_item">Introduce</h2>
+                        <p>백엔드 개발자가 되고 싶은 이민성입니다.</p>
+                        <p>🦁멋쟁이 사자처럼 10기 분들과 함께 멋있는 프로젝트를 개발해보고 싶습니다!🦁</p>
+                    </section>
+                    <section class="item">
+                        <h2 class="bounce_item">❔❓WHO AM I❓❔</h2>
+                        <P class=subTitle>Summary</P>
+                        <p>💻 전공 : 컴퓨터공학과 💻</p>
+                        <p>MBTI : ENFJ</p>
+                        <p> 취미 : 복싱💪 수영🏊‍♀️ 코노🎤 </p>
+                        <P> 특기 : 운전🚗 </P>
+                        <p></p>
+                        <p>제가 누군지 더 궁금하시죠? 지금부터 알아보실까요~~?</p>
+                    </section>
+                    <section class="item">
+                        <h2 class="bounce_item">💻아니, 전공자라면서요!!!💻</h2>
+                        <p>✔ 네, 전공자이지만 코딩 못합니다. 저도 웹 프로그래밍은 처음 이거든요!</p>
+                        <p>✔ 저는 멋쟁이사자처럼 10기 분들과 함께 배워나가고 싶습니다.</p>
+                        <p>✔ 전공자, 비전공자 가릴것 없이 동등하게 성장해 나갈 수 있는 좋은 기회가 되었으면 해요!</p>
+                        <P>✔ 저랑 밥먹으실 분들 구합니다👍 저희 빨리 친해져요!!!</P>
+                    </section>
+                    <section class="item">
+                        <h2>MBTI</h2>
+                        <h3 class="MBTI_TEXT bounce_item">😉E N F J😉</h3>
+                        <p id="MBTI_subtext">🤵정의로운 사회운동가🤵</p>
+                        <img class="MBTI_IMG" src="ENFJ.jpg">
+                        <img class="MBTI_IMG" src="ENFJ표.png">
+                        <div class="MBTI_comapre"></div>
+                        <p>✔ 외향적이라고는 하나, 처음보는 사람 앞에선 낮가립니다😂 </p>
+                        <p>✔ 대한민국에서 0.9% 미만으로 가장 희귀한 유형이랍니다! (그런데 멋사 분들중에 ENFJ 많이 본 것 같네요)</p>
+                        <p>✔ 친해지면 아주 재~밌는 성격이에요! 저랑 친해지실분?😎</p>
+                        <h3></h3>
+                    </section>
+    
+                    <section class="item">
+                        <h2 class="bounce_item">🎤코인 노래방 팟 공고모집🎤</h2>
+                        <p>✔ 시급: 0원</p>
+                        <p>✔ 지원조건 : 아주 신나게!! 목청이 터지게 놀 수 있는 사람</p>
+                        <p>✔ 지원하시면 바로 합격!</p>
+                        <p>✔ 🏊‍♀️사실 코노 말고도 복싱, 수영등 스포츠도 좋아합니다. 모두 대환영🏊‍♀️</p>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div class = "service">
+            <div id = "service-title-bind">
+                <h1>🚗GO! 너도 운전할 수 있어🚗</h1>
+                <h2 id = "service_subtitle">운전자를 위한 대중 서비스</h2>
+                <p id = "wait">🚘지금껏 몰아본 차량 종류 리스트🚘</p>
+                <h3 id = "car_gallery_text">CAR GALLERY</h3>
+            </div>
+            <section id = "car_gallery_container">
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "5톤 트럭.jpg">
+                    <div class = "car-text">
+                        <h3>5톤 트럭(MEGA 트럭)</h3>
+                        <p>특징: 대형차량이라 운전하기 힘듦. 몰아본 차량 중에서 가장 어려웠던 차량</p>
+                        <p>차량 크기: 8m 50cm / 2m 20cm</p>
+                    </div>
+                </div>
+
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "2.5톤 마이티.jpg">
+                    <div class = "car-text">
+                        <h3>2.5톤 마이티(MIGHTY)</h3>
+                        <p>특징: 신형,구형이 있는데 구형차량 클러치 감 잡는게 더 쉬웠음</p>
+                        <p>차량 크기: 6m 21cm / 3m 40cm</p>
+                    </div>
+                </div>
+                
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "1톤 봉고.jpg">
+                    <div class = "car-text">
+                        <h3>1톤 봉고(POTRO)</h3>
+                        <p>특징: 차량은 조그만해서 시야가 잘 보이나, 클러치가 너무 예민해서 다소 까다로웠음</p>
+                        <p>차량 크기: 4m 85cm / 1m 74cm</p>
+                    </div>
+                </div>
+                
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "스타랙스.jpg">
+                    <div class = "car-text">
+                        <h3>스타렉스</h3>
+                        <p>특징: 국민 차량 1호. 카니발과 함께 양대산맥(?)이라 할수있는 승합차</p>
+                        <p>차량 크기: 5m 51cm / 1m 92cm</p>
+                    </div>
+                </div>
+                
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "스포티지.jpg">
+                    <div class = "car-text">
+                        <h3>스포티지</h3>
+                        <p>특징: 현재 운전중인 차량. 통학시 맨날 타고 다닙니다!</p>
+                        <p>차량 크기: 2m 30cm / 1m 65cm</p>
+                    </div>
+                </div>
+
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "중형버스.jpg">
+                    <div class = "car-text">
+                        <h3>중형버스</h3>
+                        <p>특징: 디젤차량이라 그런지, 확실히 출력(차량 파워)가 좋았음!</p>
+                        <p>크기: 6m 37cm / 2m 29cm</p>
+                    </div>
+                </div>
+
+                <div class = "car_gallery_item">
+                    <img class = "car-img" src = "카니발.jpg">
+                    <div class = "car-text">
+                        <h3>카니발</h3>
+                        <p>특징: 스타렉스와 양대산맥을 이루고 있는 국민 승합차</p>
+                        <p>크기: 5m 11cm / 1m 68cm</p>
+                    </div>
+                </div>
+               
+                <div class = "car-gallery_item">
+                    <img class = "car-img" src = "코란도스포츠.png">
+                    <div class = "car-text">
+                        <h3>코란도스포츠</h3>
+                        <p>특징: 가장 운전하기 쉬웠던 차량. 4륜 구동이 가능하다.</p>
+                        <p>크기: 2m 60cm / 1m 57cm</p>
+                    </div>
+                    
+                </div>
+
+                <div class = "car-gallery_item">
+                    <img class = "car-img" src = "펠리세이드.jpg">
+                    <div class = "car-text">
+                        <h3>펠리세이드</h3>
+                        <p>특징: 안정감 최상위. 차량 탑제 기능 최상위.</p>
+                        <p>크기: 4m 98cm / 1m 97cm</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class ="item2">
+                    <h3 id = "drive-text"> 👩‍💻서비스 기획 동기👩‍💻</h3>
+                    <p>✔ 이렇게 🚚다양한 차량들을🚚 운행해 오면서, 사고가 발생한 뻔한적이 자주 있었습니다.</p>
+                    <p>✔ 🔥사고 발생률을 감소시켜줄 서비스를 개발해야 겠다고 다짐하게 되었습니다.🔥 </p>
+                    <p>✔ 따라서 저는 운행 출발전에 웹 사이트에 미리 접속해 사전에 운행 경로를 파악하고, 운행지 코스를 선택하는 서비스를 개발하고 싶습니다!</p>
+                </div>
+                <div class = "item2">
+                    <h3 id = "drive-text">🧙‍♂️서비스 기능 요약🧙‍♂️</h3>
+                    <p>✔ 이 서비스에선 자신의 기량에 적합한 코스를 여러 개 추천해주며, 그 중 자신이 원하는 코스를 선택해 경로를 운행 나가기전에 사전에 숙지하는 것입니다.</p>
+                    <p>✔ 즉, 서비스에는 🚦기량별 난이도 코스🚦가 여럿 탑제되어 있습니다.</p>
+                    <P>✔ 사용자는 코스를 추천받기 위해 정보를 입력합니다. 
+                    <p>✔ 입력된 개인 정보를 기반으로 💯원하는 최대난이도💯, ⏰시간⏰, 💎금액💎 안으로 목적지에 도달할 수 있는 안전한 경로를 몇 가지 탐색해줍니다. </p>
+                    <p>✔ 그리고 사용자는 추천받은 경로중에 가장 마음에 드는것을 골라서 경로 숙지를 시작하면 됩니다!</p>
+                    <p>✔ 추가적으로 커뮤니티 기능을 탑제하여 운행후 해당 코스에 대한 후기를 작성할 수 있고, 유저들은 여러 후기를 읽고 도움을 받을 수 있습니다. </p>
+                </div>
+                <footer>👦UMM.. 탑제할 서비스 기능이 너무 많으므로, 설명 못한 기능들은 해커톤때 본모습을 보여드리겠습니다👦</footer>
+            </section>
+        </div>
+    </body>
+</html>
